@@ -86,7 +86,9 @@ section{padding:128px 0}
 .stat{background:var(--paper);padding:48px 40px}
 .stat b{display:block;font-family:"Playfair Display",serif;font-size:clamp(2.4rem,4vw,3.4rem);font-weight:500;color:var(--gold);line-height:1}
 .stat span{display:block;margin-top:10px;color:var(--graf);font-size:.95rem}
-.stat strong{color:var(--ink);font-weight:700}
+.ufmini{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.ufmini i{font-style:normal;font-family:"Playfair Display",serif;font-weight:600;font-size:.9rem;color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:#fff}
+.ufmini i.pe{background:var(--ink);color:var(--gold2);border-color:var(--ink)}
 .mapa{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;margin-top:96px;padding-top:64px;border-top:1px solid var(--line)}
 .mapa h3{font-size:1.9rem;font-weight:500}
 .mapa p{color:var(--graf);margin-top:12px;max-width:40ch}
@@ -242,7 +244,7 @@ footer a{color:var(--graf)}
   <div class="stats">
     <div class="stat r"><b>+480</b><span>vidas impactadas pelo nosso trabalho</span></div>
     <div class="stat r"><b>5,0</b><span>nota média nas avaliações do Google</span></div>
-    <div class="stat r"><b>Nacional</b><span>atuação em todo o Brasil, com destaque para <strong>PE, SC, MG, RS, SP, PR e PB</strong></span></div>
+    <div class="stat r"><b>Nacional</b><span>atuação em todo o Brasil, com destaque para</span><div class="ufmini"><i class="pe">PE</i><i>SC</i><i>MG</i><i>RS</i><i>SP</i><i>PR</i><i>PB</i></div></div>
   </div>
   </div></section>
 
