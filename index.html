@@ -44,8 +44,8 @@ header a.top svg{width:18px;height:18px;fill:#fff}
 /* hero */
 .hero{position:relative;overflow:hidden;background:var(--cream)}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.hero .foto{position:relative;align-self:stretch;min-height:640px}
-.hero .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:4px;filter:saturate(.9)}
+.hero .foto{position:relative}
+.hero .foto img{display:block;width:100%;height:auto;border-radius:4px;filter:saturate(.9)}
 .hero .foto::after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.6);pointer-events:none}
 .hero .foto::before{content:"";position:absolute;left:-18px;bottom:-18px;width:60%;height:60%;border:1px solid var(--gold);z-index:-1}
 .hero .glow{position:absolute;right:-200px;top:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(229,183,85,.22),transparent 65%)}
@@ -65,42 +65,42 @@ header a.top svg{width:18px;height:18px;fill:#fff}
 .faixa .track{display:inline-block;animation:mq 42s linear infinite}
 .faixa i{font-style:normal;color:var(--gold2);margin:0 26px}
 @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-section{padding:120px 0}
-.head{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:end;margin-bottom:64px}
+section{padding:128px 0}
+.head{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:end;margin-bottom:72px}
 .head h2{font-size:clamp(2rem,3.8vw,3.2rem);font-weight:500}
 .head h2 em{font-style:italic;color:var(--gold)}
 .head p{color:var(--graf);font-size:1.05rem;max-width:52ch;font-weight:300}
 /* quem somos */
-.time{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.equipe{background:var(--paper)}
+.time{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:16px}
 .pessoa{position:relative}
-.pessoa:nth-child(2){transform:translateY(48px)}
 .pessoa .ph{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/5;background:var(--cream)}
 .pessoa .ph img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.02);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
 .pessoa:hover .ph img{transform:scale(1.04)}
 .pessoa .ph::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.55);pointer-events:none}
-.pessoa h3{font-size:1.9rem;margin-top:20px}
+.pessoa h3{font-size:1.8rem;margin-top:26px}
 .pessoa .oab{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:4px}
-.pessoa p{color:var(--graf);font-size:.95rem;margin-top:10px;max-width:34ch}
+.pessoa p{color:var(--graf);font-size:.98rem;margin-top:12px;max-width:34ch;line-height:1.7}
 /* números e atuação */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:72px}
-.stat{background:var(--paper);padding:38px 32px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:8px}
+.stat{background:var(--paper);padding:48px 40px}
 .stat b{display:block;font-family:"Playfair Display",serif;font-size:clamp(2.4rem,4vw,3.4rem);font-weight:500;color:var(--gold);line-height:1}
 .stat span{display:block;margin-top:10px;color:var(--graf);font-size:.95rem}
-.mapa{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}
+.mapa{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;margin-top:96px;padding-top:64px;border-top:1px solid var(--line)}
 .mapa h3{font-size:1.9rem;font-weight:500}
 .mapa p{color:var(--graf);margin-top:12px;max-width:40ch}
-.ufs{display:flex;flex-wrap:wrap;gap:10px}
-.uf{border:1px solid var(--line);border-radius:999px;padding:12px 18px;font-size:.92rem;background:#fff;display:flex;gap:10px;align-items:center}
+.ufs{display:flex;flex-wrap:wrap;gap:14px}
+.uf{border:1px solid var(--line);border-radius:999px;padding:14px 22px;font-size:.92rem;background:#fff;display:flex;gap:10px;align-items:center}
 .uf b{font-family:"Playfair Display",serif;color:var(--gold);font-weight:600}
 .uf.pe{background:var(--ink);color:#fff;border-color:var(--ink)}
 .uf.pe b{color:var(--gold2)}
 .uf.todos{border-style:dashed;color:var(--graf)}
-.estag{margin-top:64px;padding-top:48px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+.estag{margin-top:96px;padding-top:64px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
 .estag h3{font-size:1.9rem;font-weight:500}
 .estag p{color:var(--graf);margin-top:12px;max-width:40ch}
-.nomes{display:flex;flex-wrap:wrap;gap:14px}
-.nome{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 18px 8px 8px}
-.nome i{width:40px;height:40px;border-radius:50%;background:var(--cream);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-style:normal;color:var(--gold);font-weight:600}
+.nomes{display:flex;flex-wrap:wrap;gap:18px}
+.nome{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 22px 10px 10px}
+.nome i{width:48px;height:48px;border-radius:50%;background:var(--cream);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-style:normal;color:var(--gold);font-weight:600}
 .nome span{font-size:.95rem}
 .nome small{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--graf)}
 .contatos{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);margin-top:56px}
@@ -183,7 +183,6 @@ footer a{color:var(--graf)}
   header nav{display:none}
   header a.top span{display:none}
   .hero .wrap{grid-template-columns:1fr;padding:56px 24px 72px;gap:40px}
-  .hero .foto{min-height:0;aspect-ratio:4/4.6}
   .hero .foto::before{display:none}
   .hero h1{font-size:clamp(2.8rem,13vw,4rem)}
   .hero .btn{width:100%}
@@ -220,26 +219,10 @@ footer a{color:var(--graf)}
   <i>◆</i>Auxílio-acidente<i>◆</i>BPC/LOAS<i>◆</i>Aposentadoria<i>◆</i>Salário-maternidade<i>◆</i>Auxílio-doença<i>◆</i>Recursos e ações contra o INSS<i>◆</i>Caruaru-PE<i>◆</i>OAB/PE
 </div></div>
 
-<section id="quem-somos"><div class="wrap">
+<section id="sobre"><div class="wrap">
   <div class="head">
-    <div class="r"><div class="label">Quem somos</div><h2>Três advogados, <em>um só foco:</em> o INSS.</h2></div>
+    <div class="r"><div class="label">O escritório</div><h2>Um escritório previdenciário <em>com foco total</em> no INSS.</h2></div>
     <p class="r">Campos, Melo e Andrade Advocacia. Um escritório previdenciário em Caruaru que atende famílias de toda a região, com escuta, linguagem simples e acompanhamento de cada etapa, do pedido administrativo à Justiça Federal.</p>
-  </div>
-  <div class="time">
-    <div class="pessoa r"><div class="ph"><img src="img/paula.jpg" alt="Paula Campos"></div><h3>Paula Campos</h3><div class="oab">OAB/PE 64.446</div><p>Atendimento e acolhimento das famílias. É quem recebe o seu primeiro contato e acompanha você do início ao fim.</p></div>
-    <div class="pessoa r"><div class="ph"><img src="img/thaynara.jpg" alt="Thaynara Melo"></div><h3>Thaynara Melo</h3><div class="oab">OAB/PE 57.762</div><p>Processos administrativos e judiciais de saúde e benefícios por incapacidade.</p></div>
-    <div class="pessoa r"><div class="ph"><img src="img/iago.jpg" alt="Iago Andrade"></div><h3>Iago Andrade</h3><div class="oab">OAB/PE 59.840</div><p>BPC, auxílio-acidente, aposentadorias, recursos e ações contra o INSS.</p></div>
-  </div>
-
-  <div class="estag r">
-    <div><div class="label">Equipe de apoio</div><h3>Estagiárias que cuidam de cada detalhe</h3><p>Estudantes de Direito que acompanham documentos, prazos e o contato com as famílias, sempre sob supervisão dos advogados.</p></div>
-    <div class="nomes">
-      <div class="nome"><i>E</i><div><span>Eduarda</span><small>Estagiária</small></div></div>
-      <div class="nome"><i>R</i><div><span>Rayanne</span><small>Estagiária</small></div></div>
-      <div class="nome"><i>C</i><div><span>Cecília</span><small>Estagiária</small></div></div>
-      <div class="nome"><i>E</i><div><span>Eloiza</span><small>Estagiária</small></div></div>
-      <div class="nome"><i>V</i><div><span>Vitória</span><small>Estagiária</small></div></div>
-    </div>
   </div>
   <div class="stats">
     <div class="stat r"><b>+480</b><span>vidas impactadas pelo nosso trabalho</span></div>
@@ -303,6 +286,29 @@ footer a{color:var(--graf)}
   </div>
   <p style="margin-top:44px" class="r"><a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram. Tive um acidente, fiquei com sequela e quero saber se tenho direito ao auxílio-acidente."><svg><use href="#wa"/></svg>Quero saber se tenho direito</a></p>
 </div></section>
+
+<section class="equipe" id="quem-somos"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Quem somos</div><h2>Três advogados, <em>um só foco:</em> o INSS.</h2></div>
+    <p class="r">Cada família é acompanhada por um advogado responsável do início ao fim. Conheça quem vai cuidar do seu caso.</p>
+  </div>
+  <div class="time">
+    <div class="pessoa r"><div class="ph"><img src="img/paula.jpg" alt="Paula Campos"></div><h3>Paula Campos</h3><div class="oab">OAB/PE 64.446</div><p>Atendimento e acolhimento das famílias. É quem recebe o seu primeiro contato e acompanha você do início ao fim.</p></div>
+    <div class="pessoa r"><div class="ph"><img src="img/thaynara.jpg" alt="Thaynara Melo"></div><h3>Thaynara Melo</h3><div class="oab">OAB/PE 57.762</div><p>Processos administrativos e judiciais de saúde e benefícios por incapacidade.</p></div>
+    <div class="pessoa r"><div class="ph"><img src="img/iago.jpg" alt="Iago Andrade"></div><h3>Iago Andrade</h3><div class="oab">OAB/PE 59.840</div><p>BPC, auxílio-acidente, aposentadorias, recursos e ações contra o INSS.</p></div>
+  </div>
+
+  <div class="estag r">
+    <div><div class="label">Equipe de apoio</div><h3>Estagiárias que cuidam de cada detalhe</h3><p>Estudantes de Direito que acompanham documentos, prazos e o contato com as famílias, sempre sob supervisão dos advogados.</p></div>
+    <div class="nomes">
+      <div class="nome"><i>E</i><div><span>Eduarda</span><small>Estagiária</small></div></div>
+      <div class="nome"><i>R</i><div><span>Rayanne</span><small>Estagiária</small></div></div>
+      <div class="nome"><i>C</i><div><span>Cecília</span><small>Estagiária</small></div></div>
+      <div class="nome"><i>E</i><div><span>Eloiza</span><small>Estagiária</small></div></div>
+      <div class="nome"><i>V</i><div><span>Vitória</span><small>Estagiária</small></div></div>
+    </div>
+  </div>
+  </div></section>
 
 <section class="areas" id="areas"><div class="wrap">
   <div class="head">
