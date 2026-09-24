@@ -3,270 +3,291 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CMA Advocacia | Direito Previdenciário em Caruaru</title>
-<meta name="description" content="Escritório de advocacia previdenciária em Caruaru-PE. Auxílio-acidente, BPC/LOAS, aposentadoria e salário-maternidade. Tire suas dúvidas e agende um atendimento pelo WhatsApp.">
-<meta property="og:title" content="CMA Advocacia | Direito Previdenciário">
-<meta property="og:description" content="O INSS nega, demora e complica. Entenda os seus direitos com uma equipe especializada. Fale pelo WhatsApp.">
+<title>CMA Advocacia | Fale com a nossa equipe</title>
+<meta name="description" content="CMA Advocacia, escritório previdenciário em Caruaru-PE. Atendimento online pelo WhatsApp, de segunda a sexta. Auxílio-acidente, BPC/LOAS, aposentadoria e salário-maternidade.">
+<meta property="og:title" content="CMA Advocacia | Fale com a nossa equipe">
+<meta property="og:description" content="Atendimento online pelo WhatsApp. Você não vai ficar sem resposta.">
 <meta property="og:image" content="img/equipe.jpg">
 <link rel="icon" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 @font-face{font-family:Selawik;src:url(img/selawk.ttf);font-weight:400}
 @font-face{font-family:Selawik;src:url(img/selawkl.ttf);font-weight:300}
 @font-face{font-family:Selawik;src:url(img/selawkb.ttf);font-weight:700}
-:root{--gold:#B48535;--gold2:#E5B755;--graf:#5F5A54;--ink:#3A3A3C;--cream:#FBF6EA;--wa:#25D366;--dark:#2b2825}
+:root{--gold:#B48535;--gold2:#E5B755;--graf:#5F5A54;--ink:#2e2b28;--paper:#FCFAF5;--cream:#F6EFE0;--line:#E4D9C3;--wa:#1EBE5D;--dark:#1f1c19}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Selawik,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.12;color:var(--dark)}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.eyebrow{display:inline-block;font-size:1rem;font-style:italic;font-family:"Cormorant Garamond",serif;color:var(--gold);font-weight:600;margin-bottom:10px}
-.filete{width:56px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));margin:16px 0 20px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:17px 28px;border-radius:999px;font-size:1.05rem;box-shadow:0 10px 28px rgba(37,211,102,.32);transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(37,211,102,.42)}
+body{font-family:Selawik,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='.9'/></svg>")}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;line-height:1.05;color:var(--ink);letter-spacing:-.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.label{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.label::before{content:"";display:inline-block;width:28px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;padding:18px 30px;border-radius:999px;font-size:1.02rem;letter-spacing:.01em;box-shadow:0 14px 34px -10px rgba(30,190,93,.55);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 20px 40px -12px rgba(30,190,93,.65)}
 .btn svg{width:22px;height:22px;flex:none;fill:#fff}
-.btn.ouro{background:#fff;color:var(--dark);border:1.5px solid var(--gold);box-shadow:none}
-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid #eee7d8}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-header img{height:38px}
-header a.top{font-size:.88rem;font-weight:700;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px;background:var(--wa);padding:9px 16px;border-radius:999px}
+.btn.line{background:transparent;color:var(--ink);border:1px solid var(--ink);box-shadow:none}
+.btn.line:hover{background:var(--ink);color:#fff}
+/* reveal */
+.r{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.r.in{opacity:1;transform:none}
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(252,250,245,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+header img{height:40px}
+header nav{display:flex;gap:28px;font-size:.86rem}
+header nav a{color:var(--graf);text-decoration:none}
+header nav a:hover{color:var(--gold)}
+header a.top{font-size:.84rem;font-weight:700;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px;background:var(--wa);padding:10px 18px;border-radius:999px}
 header a.top svg{width:18px;height:18px;fill:#fff}
-.hero{position:relative;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);overflow:hidden}
-.hero::before{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(229,183,85,.28),transparent 70%)}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:60px 20px 64px}
-.hero h1{font-size:clamp(2.3rem,4.8vw,3.7rem)}
-.hero h1 em{font-style:italic;color:var(--gold)}
-.hero p.sub{color:var(--graf);font-size:1.12rem;max-width:540px;margin:18px 0 28px;font-weight:300}
-.hero .foto{position:relative}
-.hero .foto img{width:100%;border-radius:20px;display:block;box-shadow:0 30px 60px rgba(90,70,30,.22)}
-.hero .foto::after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1.5px solid var(--gold);border-radius:20px;z-index:-1}
-.hero small{display:block;margin-top:14px;color:var(--graf);font-size:.86rem}
-.acoes{display:flex;gap:12px;flex-wrap:wrap}
-.faixa{background:var(--dark);color:#fff}
-.faixa .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:26px 20px;text-align:center}
-.faixa b{display:block;font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--gold2);font-weight:600;line-height:1.1}
-.faixa span{font-size:.86rem;color:#d9d4cc}
-.estrelas{color:var(--gold2);letter-spacing:2px;font-size:1rem}
-section{padding:76px 0}
-section h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:6px}
-.lead{color:var(--graf);max-width:680px;font-size:1.05rem}
-.bg{background:var(--cream)}
-.centro{text-align:center;margin-top:40px}
-.vant{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px}
-.v{background:#fff;border:1px solid #eadfc8;border-radius:16px;padding:24px;box-shadow:0 6px 24px rgba(90,70,30,.05)}
-.v b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--gold);font-weight:600;margin-bottom:6px}
-.v p{color:var(--graf);font-size:.95rem}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px}
-.card{background:#fff;border:1px solid #eadfc8;border-radius:16px;padding:24px 22px;display:flex;flex-direction:column;gap:8px;transition:transform .15s,box-shadow .15s;position:relative;overflow:hidden}
-.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--gold),var(--gold2))}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(90,70,30,.12)}
-.card h3{font-size:1.4rem}
-.card p{color:var(--graf);font-size:.94rem;flex:1}
-.card a{color:#fff;background:var(--wa);font-weight:700;text-decoration:none;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;align-self:flex-start;margin-top:6px}
-.card a svg{width:16px;height:16px;fill:#fff}
-.casos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:36px}
-.caso{background:#fff;border:1px solid #eadfc8;border-radius:18px;padding:28px 26px;position:relative;box-shadow:0 8px 30px rgba(90,70,30,.06)}
-.caso::before{content:"“";position:absolute;top:8px;right:20px;font-family:"Cormorant Garamond",serif;font-size:5rem;color:var(--gold2);opacity:.55;line-height:1}
-.caso .tag{display:inline-block;font-size:.78rem;color:var(--gold);font-weight:700;border:1px solid var(--gold);padding:3px 10px;border-radius:999px;margin-bottom:14px}
-.caso h3{font-size:1.5rem;margin-bottom:10px}
-.caso p{color:var(--graf);font-size:.97rem}
-.caso .valor{font-family:"Cormorant Garamond",serif;font-size:2.4rem;color:var(--gold);font-weight:600;line-height:1;margin:12px 0 4px}
-.caso .res{margin-top:14px;padding-top:12px;border-top:1px dashed #e0d7c5;font-weight:700;color:var(--dark);font-size:.95rem}
-.caso .res span{color:var(--gold)}
-.passos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:36px}
-.passo b{font-family:"Cormorant Garamond",serif;font-size:3rem;color:var(--gold);font-weight:600;line-height:1;display:block}
-.passo h3{font-size:1.3rem;margin:8px 0 6px}
-.passo p{color:var(--graf);font-size:.95rem}
-.equipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:36px}
-.adv{background:#fff;border:1px solid #eadfc8;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(90,70,30,.06)}
-.adv img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
-.adv div{padding:20px 22px 24px}
-.adv h3{font-size:1.45rem}
-.adv span{display:block;color:var(--gold);font-size:.82rem;font-weight:700;margin-top:2px}
-.adv p{color:var(--graf);font-size:.93rem;margin-top:10px}
-.google{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:#fff;border:1px solid #eadfc8;border-radius:18px;padding:28px;margin-top:36px}
-.google .nota{font-family:"Cormorant Garamond",serif;font-size:4rem;color:var(--dark);font-weight:600;line-height:1;text-align:center}
-.google .nota small{display:block;font-family:Selawik,sans-serif;font-size:.8rem;color:var(--graf);margin-top:6px}
-.google p{color:var(--graf)}
-.google .estrelas{font-size:1.4rem;color:var(--gold);display:block;margin-bottom:6px}
-details{border-bottom:1px solid #eadfc8;padding:16px 0}
-summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:1.02rem}
-summary::after{content:"+";color:var(--gold);font-size:1.5rem;font-weight:300}
-details[open] summary::after{content:"–"}
-details p{color:var(--graf);margin-top:10px;font-size:.96rem}
-.agenda{background:var(--dark);color:#fff;text-align:center}
-.agenda h2{color:#fff}
-.agenda p{color:#d9d4cc;max-width:600px;margin:12px auto 30px;font-weight:300;font-size:1.08rem}
-.agenda .info{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:28px;font-size:.9rem;color:#d9d4cc}
-footer{padding:36px 0 110px;font-size:.84rem;color:var(--graf);text-align:center}
-footer img{height:34px;margin-bottom:14px}
-footer .aviso{max-width:780px;margin:14px auto 0;font-size:.78rem;color:#8a847c}
+/* hero */
+.hero{position:relative;min-height:88vh;display:grid;align-items:center;overflow:hidden;background:var(--cream)}
+.hero .bgimg{position:absolute;inset:0;background:url(img/equipe.jpg) center 22%/cover no-repeat;filter:saturate(.85)}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(252,250,245,1) 0%,rgba(252,250,245,.96) 38%,rgba(252,250,245,.55) 62%,rgba(252,250,245,.05) 100%)}
+.hero .veil2{position:absolute;inset:0;background:linear-gradient(180deg,rgba(252,250,245,.2),rgba(252,250,245,0) 30%,rgba(252,250,245,.9) 100%)}
+.hero .wrap{padding:96px 24px 110px;max-width:1120px}
+.hero .marca{font-family:"Cormorant Garamond",serif;font-size:.95rem;letter-spacing:.34em;text-transform:uppercase;color:var(--graf);margin-bottom:26px}
+.hero h1{font-size:clamp(3rem,7vw,6rem);max-width:12ch;font-weight:300}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+.hero .horario{display:flex;align-items:center;gap:12px;margin:30px 0 26px;font-size:.98rem;color:var(--graf)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 0 rgba(30,190,93,.6);animation:pulsa 2s infinite}
+@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(30,190,93,.55)}70%{box-shadow:0 0 0 12px rgba(30,190,93,0)}100%{box-shadow:0 0 0 0 rgba(30,190,93,0)}}
+.hero .sub{max-width:44ch;color:var(--graf);font-size:1.08rem;font-weight:300;margin-top:22px}
+.hero .sub b{color:var(--ink);font-weight:700}
+.scroll{position:absolute;left:24px;bottom:28px;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--graf);display:flex;align-items:center;gap:12px;z-index:2}
+.scroll span{display:block;width:1px;height:40px;background:var(--graf);opacity:.5}
+/* faixa */
+.faixa{background:var(--dark);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;font-family:"Cormorant Garamond",serif;font-size:1.05rem;letter-spacing:.06em}
+.faixa .track{display:inline-block;animation:mq 42s linear infinite}
+.faixa i{font-style:normal;color:var(--gold2);margin:0 26px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section{padding:120px 0}
+.head{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:end;margin-bottom:64px}
+.head h2{font-size:clamp(2.4rem,4.6vw,4rem);font-weight:300}
+.head h2 em{font-style:italic;color:var(--gold)}
+.head p{color:var(--graf);font-size:1.05rem;max-width:52ch;font-weight:300}
+/* quem somos */
+.time{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.pessoa{position:relative}
+.pessoa:nth-child(2){transform:translateY(48px)}
+.pessoa .ph{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/5;background:var(--cream)}
+.pessoa .ph img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.02);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pessoa:hover .ph img{transform:scale(1.04)}
+.pessoa .ph::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.55);pointer-events:none}
+.pessoa h3{font-size:1.9rem;margin-top:20px}
+.pessoa .oab{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:4px}
+.pessoa p{color:var(--graf);font-size:.95rem;margin-top:10px;max-width:34ch}
+/* avaliações */
+.aval{background:var(--dark);color:#fff}
+.aval h2,.aval h3{color:#fff}
+.aval .head p{color:#c9c2b6}
+.gbox{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;border-top:1px solid rgba(255,255,255,.14);padding-top:56px}
+.gbox .nota{font-family:"Cormorant Garamond",serif;font-size:clamp(6rem,14vw,11rem);line-height:.9;font-weight:300;color:#fff}
+.gbox .nota small{display:block;font-family:Selawik,sans-serif;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);margin-top:18px;font-weight:700}
+.stars{color:var(--gold2);font-size:1.6rem;letter-spacing:6px}
+.gbox blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(1.5rem,2.6vw,2.1rem);font-style:italic;font-weight:300;line-height:1.3;margin:18px 0 26px;color:#f3eee4}
+.gbox p{color:#c9c2b6;font-size:.98rem;max-width:46ch}
+.btn.claro{background:#fff;color:var(--ink);box-shadow:none}
+/* resultados */
+.res{background:var(--paper)}
+.numeros{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.num{padding:44px 36px 44px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.num:nth-child(odd){padding-right:48px;border-right:1px solid var(--line)}
+.num:nth-child(even){padding-left:48px}
+.num .big{font-family:"Cormorant Garamond",serif;font-size:clamp(2.6rem,4.6vw,4.2rem);line-height:.95;font-weight:300;color:var(--ink);min-width:6ch}
+.num .big b{font-weight:500;color:var(--gold)}
+.num h3{font-size:1.45rem;margin-bottom:8px;font-weight:500}
+.num p{color:var(--graf);font-size:.95rem;max-width:40ch}
+.num .tag{display:inline-block;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+.nota-res{margin-top:28px;font-size:.82rem;color:#8a847c;max-width:70ch}
+/* auxílio */
+.aux{background:var(--cream)}
+.aux .lista{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.aux .item{background:var(--cream);padding:34px 30px}
+.aux .item b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.7rem;font-weight:500;margin-bottom:8px}
+.aux .item p{color:var(--graf);font-size:.95rem}
+.aux .item span{display:block;font-family:"Cormorant Garamond",serif;color:var(--gold);font-size:.9rem;letter-spacing:.2em;margin-bottom:14px}
+/* áreas */
+.areas .row{display:grid;grid-template-columns:1.1fr 1.6fr auto;gap:28px;align-items:center;padding:30px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit;transition:padding .25s}
+.areas .row:last-child{border-bottom:1px solid var(--line)}
+.areas .row:hover{padding-left:12px}
+.areas .row h3{font-size:1.9rem;font-weight:400}
+.areas .row p{color:var(--graf);font-size:.96rem}
+.areas .row .go{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--wa);white-space:nowrap}
+.areas .row .go svg{width:20px;height:20px;fill:var(--wa)}
+/* dúvidas */
+details{border-top:1px solid var(--line);padding:24px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:1.8rem;font-weight:300;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--graf);margin-top:12px;font-size:.98rem;max-width:70ch}
+/* agenda */
+.agenda{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+.agenda::before{content:"";position:absolute;width:900px;height:900px;border-radius:50%;border:1px solid rgba(229,183,85,.25);right:-300px;top:-300px}
+.agenda::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;border:1px solid rgba(229,183,85,.18);right:-150px;top:-150px}
+.agenda h2{color:#fff;font-size:clamp(2.6rem,5.4vw,4.6rem);font-weight:300;max-width:16ch}
+.agenda h2 em{font-style:italic;color:var(--gold2)}
+.agenda p{color:#c9c2b6;max-width:48ch;margin:22px 0 34px;font-size:1.05rem;font-weight:300}
+.agenda .meta{display:flex;gap:40px;flex-wrap:wrap;margin-top:40px;font-size:.9rem;color:#c9c2b6}
+.agenda .meta b{display:block;color:#fff;font-weight:700;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:6px}
+footer{padding:48px 0 120px;font-size:.84rem;color:var(--graf)}
+footer .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start}
+footer img{height:36px}
+footer .aviso{margin-top:18px;font-size:.76rem;color:#8a847c;max-width:78ch;line-height:1.6}
 footer a{color:var(--graf)}
-.flutua{position:fixed;right:18px;bottom:18px;z-index:50;width:62px;height:62px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.45);animation:pulsa 2.4s infinite}
+.flutua{position:fixed;right:22px;bottom:22px;z-index:50;width:64px;height:64px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 34px -8px rgba(30,190,93,.6);animation:pulsa 2.4s infinite}
 .flutua svg{width:34px;height:34px;fill:#fff}
-@keyframes pulsa{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-@media(max-width:820px){
-  .hero .wrap{grid-template-columns:1fr;padding:40px 20px 52px}
-  .hero .foto{max-width:400px;margin:36px auto 0}
-  .hero .btn{width:100%}
-  section{padding:56px 0}
+@media(max-width:900px){
+  .head,.gbox,.time,.numeros,.aux .lista,footer .wrap{grid-template-columns:1fr}
+  .pessoa:nth-child(2){transform:none}
+  .num:nth-child(odd){border-right:0;padding-right:0}
+  .num:nth-child(even){padding-left:0}
+  .num{grid-template-columns:1fr;gap:12px}
+  .areas .row{grid-template-columns:1fr;gap:10px}
+  section{padding:80px 0}
+  .head{margin-bottom:40px}
+  header nav{display:none}
   header a.top span{display:none}
-  .google{grid-template-columns:1fr;text-align:center}
+  .hero{min-height:auto}
+  .hero .wrap{padding:72px 24px 96px}
+  .hero .bgimg{background-position:center 15%}
+  .hero .veil{background:linear-gradient(180deg,rgba(252,250,245,.97) 0%,rgba(252,250,245,.93) 55%,rgba(252,250,245,.75) 100%)}
+  .hero .btn{width:100%}
+  .scroll{display:none}
 }
 </style>
 </head>
 <body>
-
 <svg style="display:none"><symbol id="wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1c-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.5 1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.7.5-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol></svg>
 
 <header><div class="wrap">
   <img src="img/logo.png" alt="CMA Advocacia">
-  <a class="top wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg><span>Falar com a equipe no WhatsApp</span></a>
+  <nav><a href="#quem-somos">Quem somos</a><a href="#avaliacoes">Avaliações</a><a href="#resultados">Resultados</a><a href="#areas">Áreas</a><a href="#duvidas">Dúvidas</a></nav>
+  <a class="top wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
 </div></header>
 
-<section class="hero"><div class="wrap">
-  <div>
-    <span class="eyebrow">Direito Previdenciário em Caruaru-PE</span>
-    <h1>O INSS negou, cortou ou está demorando?<br><em>Você não precisa enfrentar isso sozinho.</em></h1>
-    <p class="sub">Você trabalhou, contribuiu e cuidou dos seus. Nossa equipe analisa o seu caso, explica em palavras simples quais são as possibilidades e acompanha você em cada etapa, do INSS à Justiça.</p>
-    <div class="acoes">
-      <a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg>Falar com a equipe no WhatsApp</a>
-      <a class="btn ouro" href="#duvidas">Tirar dúvidas</a>
-    </div>
-    <small>Resposta rápida, por mensagem ou áudio. Sem precisar sair de casa.</small>
+<section class="hero" id="inicio">
+  <div class="bgimg"></div><div class="veil"></div><div class="veil2"></div>
+  <div class="wrap">
+    <div class="marca r in">CMA Advocacia · Caruaru-PE</div>
+    <h1 class="r in">Fale com a <em>nossa equipe.</em></h1>
+    <div class="horario r in"><span class="dot"></span>Atendimento de segunda a sexta, das 9h às 18h</div>
+    <a class="btn wa r in" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg>Falar com a equipe no WhatsApp</a>
+    <p class="sub r in">Atendimento online, por mensagem ou áudio. <b>Você não vai ficar sem resposta.</b> Direito previdenciário: INSS, benefícios e aposentadoria.</p>
   </div>
-  <div class="foto"><img src="img/equipe.jpg" alt="Equipe da CMA Advocacia: Thaynara Melo, Iago Andrade e Paula Campos"></div>
-</div></section>
+  <div class="scroll"><span></span>rolar</div>
+</section>
 
-<div class="faixa"><div class="wrap">
-  <div><b>5,0</b><span class="estrelas">★★★★★</span><br><span>nota no Google, com dezenas de avaliações</span></div>
-  <div><b>3</b><span>advogados da OAB/PE dedicados só ao INSS</span></div>
-  <div><b>Caruaru</b><span>escritório físico no Maurício de Nassau</span></div>
-  <div><b>INSS e Justiça</b><span>pedido, recurso administrativo e ação judicial</span></div>
+<div class="faixa"><div class="track">
+  <i>◆</i>Auxílio-acidente<i>◆</i>BPC/LOAS<i>◆</i>Aposentadoria<i>◆</i>Salário-maternidade<i>◆</i>Auxílio-doença<i>◆</i>Recursos e ações contra o INSS<i>◆</i>Caruaru-PE<i>◆</i>OAB/PE
+  <i>◆</i>Auxílio-acidente<i>◆</i>BPC/LOAS<i>◆</i>Aposentadoria<i>◆</i>Salário-maternidade<i>◆</i>Auxílio-doença<i>◆</i>Recursos e ações contra o INSS<i>◆</i>Caruaru-PE<i>◆</i>OAB/PE
 </div></div>
 
-<section class="bg" id="auxilio-acidente"><div class="wrap">
-  <span class="eyebrow">Auxílio-acidente</span>
-  <h2>Ficou com sequela e voltou a trabalhar? Você pode ter direito a receber do INSS todo mês, mesmo empregado.</h2>
-  <div class="filete"></div>
-  <p class="lead">O auxílio-acidente é o benefício mais esquecido do INSS. Quem sofreu um acidente, de qualquer tipo, e ficou com alguma limitação permanente, pode ter esse direito e nem saber.</p>
-  <div class="vant">
-    <div class="v"><b>Recebe trabalhando</b><p>Não precisa parar de trabalhar. O benefício é pago junto com o seu salário, todo mês.</p></div>
-    <div class="v"><b>Até a aposentadoria</b><p>Uma vez concedido, é pago até você se aposentar. Anos de renda a mais na sua casa.</p></div>
-    <div class="v"><b>Qualquer acidente</b><p>Não precisa ter sido no trabalho. Moto, queda, acidente em casa ou na rua também contam.</p></div>
-    <div class="v"><b>Paga o atrasado</b><p>O INSS deve pagar desde o dia em que o auxílio-doença acabou. Pode ser mais de um ano de valores de uma vez.</p></div>
-    <div class="v"><b>Sem carência</b><p>Não exige tempo mínimo de contribuição. Basta ter qualidade de segurado na data do acidente.</p></div>
-    <div class="v"><b>Sequela pequena também vale</b><p>Não precisa estar incapacitado. Basta que a limitação exija mais esforço para fazer o mesmo trabalho.</p></div>
+<section id="quem-somos"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Quem somos</div><h2>Três advogados, <em>um só foco:</em> o INSS.</h2></div>
+    <p class="r">Campos, Melo e Andrade Advocacia. Um escritório previdenciário em Caruaru que atende famílias de toda a região, com escuta, linguagem simples e acompanhamento de cada etapa, do pedido administrativo à Justiça Federal.</p>
   </div>
-  <div class="centro"><a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram. Tive um acidente, fiquei com sequela e quero saber se tenho direito ao auxílio-acidente."><svg><use href="#wa"/></svg>Quero saber se tenho direito ao auxílio-acidente</a></div>
-</div></section>
-
-<section id="casos"><div class="wrap">
-  <span class="eyebrow">Casos reais do escritório</span>
-  <h2>Histórias que passaram por aqui</h2>
-  <div class="filete"></div>
-  <p class="lead">Contadas pela nossa equipe, com o primeiro nome dos clientes e a autorização deles. Cada caso é único, e o resultado depende sempre da análise individual.</p>
-  <div class="casos">
-    <div class="caso"><span class="tag">Auxílio-acidente · Justiça Federal</span><h3>Giliarde recebeu de uma vez o que o INSS deixou de pagar.</h3><div class="valor">R$ 28.947,69</div><p>O INSS não reconheceu a sequela do Giliarde. Entramos na Justiça Federal de Caruaru, a sentença foi favorável e o juiz mandou o INSS pagar os atrasados, com correção. O valor foi requisitado em nome dele em 2025.</p><div class="res"><span>Resultado:</span> R$ 21.505,36 de atrasados mais R$ 7.442,33 de correção, além do benefício mensal daí em diante.</div></div>
-    <div class="caso"><span class="tag">Auxílio-acidente</span><h3>Gilvan esperou quase dois anos. O direito era dele desde o começo.</h3><p>O auxílio-doença do Gilvan foi cortado em agosto de 2024 e o INSS não reconheceu a sequela que ficou. Ele voltou a trabalhar com dificuldade e sem nenhum benefício. Entramos com o pedido, provamos a sequela e o auxílio-acidente foi deferido.</p><div class="res"><span>Resultado:</span> benefício mensal concedido, com direito aos valores desde a data em que o auxílio-doença acabou, em 2024.</div></div>
-    <div class="caso"><span class="tag">Auxílio-acidente</span><h3>Márcio pediu em maio. Em agosto, o benefício estava concedido.</h3><p>Pedido feito direto no INSS, com a documentação médica organizada pela equipe. Em cerca de três meses o INSS reconheceu o direito. Agora cobramos na Justiça os anos em que ele deveria ter recebido e não recebeu.</p><div class="res"><span>Resultado:</span> auxílio-acidente concedido na via administrativa, pago junto com o salário, e ação de atrasados em andamento.</div></div>
-    <div class="caso"><span class="tag">BPC/LOAS</span><h3>O BPC do João Lucas foi cortado. Voltou com os atrasados.</h3><div class="valor">cerca de R$ 15 mil</div><p>A mãe do João Lucas recorreu sozinha e o caso travou. Assumimos a defesa no recurso e o Conselho de Recursos da Previdência acolheu o pedido, reativando o benefício.</p><div class="res"><span>Resultado:</span> BPC reimplantado e atrasados pagos de uma vez à família.</div></div>
-    <div class="caso"><span class="tag">BPC/LOAS</span><h3>BPC da pessoa com deficiência aprovado em um dia.</h3><p>Quando o pedido entra completo e do jeito certo, o INSS não tem o que questionar. Esta cliente chegou por indicação de outra família atendida e teve o benefício aprovado no dia seguinte ao protocolo.</p><div class="res"><span>Resultado:</span> um salário mínimo por mês garantido, sem perícia demorada.</div></div>
-    <div class="caso"><span class="tag">BPC/LOAS</span><h3>Gabriel: mais um BPC concedido sem precisar de Justiça.</h3><p>Família de baixa renda, criança com deficiência, laudos organizados e o pedido bem fundamentado. Concessão direta na via administrativa, em setembro de 2026.</p><div class="res"><span>Resultado:</span> benefício mensal concedido para a família.</div></div>
-    <div class="caso"><span class="tag">Salário-maternidade</span><h3>Uma mãe que achava que não tinha direito.</h3><p>Filha de uma cliente antiga do escritório, ela não sabia que podia receber o salário-maternidade na situação dela. A equipe analisou as contribuições, fez o pedido e o INSS concedeu.</p><div class="res"><span>Resultado:</span> quatro meses de salário-maternidade pagos pelo INSS.</div></div>
-  </div>
-  <div class="centro"><a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram, vi os casos do escritório e quero saber se o meu caso também tem solução."><svg><use href="#wa"/></svg>Quero saber se o meu caso tem solução</a></div>
-</div></section>
-
-<section class="bg" id="situacoes"><div class="wrap">
-  <span class="eyebrow">Você se reconhece em alguma destas situações?</span>
-  <h2>O INSS diz não todos os dias para quem tem direito</h2>
-  <div class="filete"></div>
-  <p class="lead">Exemplos ilustrativos de situações que chegam ao escritório. Se alguma parece com a sua, vale a pena conversar.</p>
-  <div class="grid">
-    <div class="card"><h3>O senhor que perdeu a perna e ouviu "não"</h3><p>Amputação após acidente, voltou a trabalhar com prótese e o INSS negou o auxílio-acidente dizendo que ele "está apto". A lei garante o benefício justamente para quem trabalha com sequela.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram. Tive uma amputação ou sequela grave e o INSS negou meu benefício. Quero saber o que fazer."><svg><use href="#wa"/></svg>Parece o meu caso</a></div>
-    <div class="card"><h3>A mãe do menino autista que "não é grave o suficiente"</h3><p>Laudo, terapias, escola adaptada e a perícia do INSS concluindo que a criança não tem impedimento de longo prazo. Com o laudo certo e o pedido bem feito, o cenário muda.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram. O INSS negou o BPC do meu filho com autismo e quero saber o que fazer."><svg><use href="#wa"/></svg>Parece o meu caso</a></div>
-    <div class="card"><h3>O motoboy que quebrou o braço e ficou com o punho travado</h3><p>Acidente de moto no caminho de casa, não foi no trabalho. Voltou a rodar com dor e menos força. Muita gente nem imagina que isso pode dar direito a receber do INSS todo mês.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram. Tive um acidente de moto e fiquei com sequela. Quero saber se tenho direito ao auxílio-acidente."><svg><use href="#wa"/></svg>Parece o meu caso</a></div>
-    <div class="card"><h3>A dona de casa de 66 anos que nunca contribuiu</h3><p>Viúva, sem renda, morando com a filha que ganha pouco. Achava que só quem pagou INSS tem direito a alguma coisa. O BPC do idoso existe exatamente para ela.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram. Tenho mais de 65 anos, nunca contribuí e quero saber se tenho direito ao BPC."><svg><use href="#wa"/></svg>Parece o meu caso</a></div>
+  <div class="time">
+    <div class="pessoa r"><div class="ph"><img src="img/paula.jpg" alt="Paula Campos"></div><h3>Paula Campos</h3><div class="oab">OAB/PE 64.446</div><p>Atendimento e acolhimento das famílias. É quem recebe o seu primeiro contato e acompanha você do início ao fim.</p></div>
+    <div class="pessoa r"><div class="ph"><img src="img/thaynara.jpg" alt="Thaynara Melo"></div><h3>Thaynara Melo</h3><div class="oab">OAB/PE 57.762</div><p>Processos administrativos e judiciais de saúde e benefícios por incapacidade.</p></div>
+    <div class="pessoa r"><div class="ph"><img src="img/iago.jpg" alt="Iago Andrade"></div><h3>Iago Andrade</h3><div class="oab">OAB/PE 59.840</div><p>BPC, auxílio-acidente, aposentadorias, recursos e ações contra o INSS.</p></div>
   </div>
 </div></section>
 
-<section id="areas"><div class="wrap">
-  <span class="eyebrow">Como podemos ajudar</span>
-  <h2>Escolha a sua situação e fale direto com quem entende</h2>
-  <div class="filete"></div>
-  <p class="lead">Cada botão abre o WhatsApp com a sua dúvida já escrita. É só enviar.</p>
-  <div class="grid">
-    <div class="card"><h3>Auxílio-acidente</h3><p>Sequela de acidente de qualquer tipo, mesmo que você já tenha voltado a trabalhar.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o auxílio-acidente."><svg><use href="#wa"/></svg>Falar sobre auxílio-acidente</a></div>
-    <div class="card"><h3>BPC/LOAS criança ou adulto com deficiência</h3><p>Autismo, síndrome de Down, deficiência física ou intelectual. Um salário mínimo por mês para famílias de baixa renda.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o BPC/LOAS para pessoa com deficiência."><svg><use href="#wa"/></svg>Falar sobre BPC</a></div>
-    <div class="card"><h3>BPC/LOAS para idoso</h3><p>A partir de 65 anos, mesmo sem nunca ter contribuído, quando a renda da família é baixa.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o BPC/LOAS para idoso."><svg><use href="#wa"/></svg>Falar sobre BPC idoso</a></div>
-    <div class="card"><h3>Aposentadoria</h3><p>Por idade, tempo de contribuição, regras de transição e planejamento para se aposentar na melhor regra.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre a minha aposentadoria."><svg><use href="#wa"/></svg>Falar sobre aposentadoria</a></div>
-    <div class="card"><h3>Salário-maternidade</h3><p>Para mães empregadas, desempregadas, MEI, autônomas ou rurais. Também em caso de adoção.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o salário-maternidade."><svg><use href="#wa"/></svg>Falar sobre maternidade</a></div>
-    <div class="card"><h3>Benefício negado ou cortado</h3><p>O INSS negou, cessou ou pediu documentos que você não entende? Existem caminhos: recurso, novo pedido ou Justiça.</p><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram. O INSS negou ou cortou meu benefício e quero saber o que fazer."><svg><use href="#wa"/></svg>Meu benefício foi negado</a></div>
+<section class="aval" id="avaliacoes"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Avaliações</div><h2>O que as famílias <em>dizem de nós.</em></h2></div>
+    <p class="r">Avaliações públicas, feitas por clientes na ficha do escritório no Google. Qualquer pessoa pode conferir.</p>
+  </div>
+  <div class="gbox">
+    <div class="r"><div class="nota">5,0<small>Nota média no Google</small></div></div>
+    <div class="r"><div class="stars">★★★★★</div><blockquote>Dezenas de famílias de Caruaru e região avaliaram o atendimento da CMA com a nota máxima.</blockquote><p>Cada avaliação é de um cliente real, publicada por ele mesmo na ficha do Google do escritório.</p><p style="margin-top:22px"><a class="btn claro" href="https://www.google.com/maps/search/?api=1&query=CMA+Advocacia+-+Advogados+Caruaru" target="_blank" rel="noopener">Ver as avaliações no Google</a></p></div>
   </div>
 </div></section>
 
-<section class="bg"><div class="wrap">
-  <span class="eyebrow">Como funciona</span>
-  <h2>Simples, do primeiro contato até a decisão</h2>
-  <div class="filete"></div>
-  <div class="passos">
-    <div class="passo"><b>1</b><h3>Você conta a sua história</h3><p>Pelo WhatsApp, por texto ou áudio. Sem burocracia e sem sair de casa para o primeiro contato.</p></div>
-    <div class="passo"><b>2</b><h3>A equipe analisa o caso</h3><p>Verificamos documentos, contribuições e requisitos e explicamos, com clareza, quais são as possibilidades.</p></div>
-    <div class="passo"><b>3</b><h3>Acompanhamos cada etapa</h3><p>Do pedido no INSS ao processo na Justiça, se for preciso. Você acompanha cada passo pelo WhatsApp.</p></div>
+<section class="res" id="resultados"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Exemplos reais</div><h2>Resultados que <em>mudaram uma casa.</em></h2></div>
+    <p class="r">Casos atendidos pelo escritório, identificados só pela inicial. Cada caso é único e o resultado depende sempre da análise individual e da decisão do INSS ou da Justiça.</p>
   </div>
+  <div class="numeros">
+    <div class="num r"><div class="big">R$ <b>28.947</b>,69</div><div><span class="tag">Auxílio-acidente · Justiça Federal de Caruaru</span><h3>O INSS negou. A Justiça mandou pagar.</h3><p>G. ficou com sequela e o INSS não reconheceu. A sentença foi favorável e o juiz requisitou o pagamento dos atrasados, com correção, em nome dele: R$ 21.505,36 de valores em atraso mais R$ 7.442,33 de correção. E o benefício segue todo mês.</p></div></div>
+    <div class="num r"><div class="big"><b>1</b> dia</div><div><span class="tag">BPC/LOAS · pessoa com deficiência</span><h3>Pedido protocolado hoje, aprovado amanhã.</h3><p>Quando o pedido entra completo e bem fundamentado, o INSS não tem o que questionar. Esta cliente chegou por indicação de outra família e teve o benefício aprovado no dia seguinte ao protocolo.</p></div></div>
+    <div class="num r"><div class="big">~R$ <b>15</b> mil</div><div><span class="tag">BPC/LOAS · recurso administrativo</span><h3>Benefício cortado, reativado com os atrasados.</h3><p>A mãe de J. L. recorreu sozinha e o caso travou. Assumimos a defesa no recurso, o Conselho de Recursos da Previdência acolheu, reimplantou o BPC e a família recebeu os atrasados de uma vez.</p></div></div>
+    <div class="num r"><div class="big"><b>3</b> meses</div><div><span class="tag">Auxílio-acidente · via administrativa</span><h3>Pediu em maio. Em agosto, concedido.</h3><p>M. pediu direto no INSS, com a documentação médica organizada pela equipe. Sem processo judicial: em cerca de três meses o INSS reconheceu o direito, pago junto com o salário.</p></div></div>
+    <div class="num r"><div class="big"><b>2</b> anos</div><div><span class="tag">Auxílio-acidente · atrasados reconhecidos</span><h3>O direito era dele desde 2024.</h3><p>O auxílio-doença de G. foi cortado em agosto de 2024 e o INSS ignorou a sequela. Provamos a limitação, o auxílio-acidente foi deferido e os valores contam desde a data do corte.</p></div></div>
+    <div class="num r"><div class="big"><b>4</b> meses</div><div><span class="tag">Salário-maternidade</span><h3>Ela achava que não tinha direito.</h3><p>Filha de uma cliente antiga, não sabia que podia receber o salário-maternidade na situação dela. A equipe analisou as contribuições, fez o pedido e o INSS concedeu os quatro meses.</p></div></div>
+  </div>
+  <p class="nota-res r">Valores conforme documentos oficiais dos processos. Nomes reduzidos à inicial para preservar a privacidade dos clientes.</p>
 </div></section>
 
-<section id="equipe"><div class="wrap">
-  <span class="eyebrow">Quem vai cuidar do seu caso</span>
-  <h2>Uma equipe dedicada só ao direito previdenciário</h2>
-  <div class="filete"></div>
-  <p class="lead">Campos, Melo e Andrade Advocacia. Escritório físico em Caruaru-PE, atendendo famílias de toda a região.</p>
-  <div class="equipe">
-    <div class="adv"><img src="img/paula.jpg" alt="Paula Campos"><div><h3>Paula Campos</h3><span>OAB/PE 64.446</span><p>Atendimento e acolhimento das famílias. É quem recebe o seu primeiro contato e acompanha você do início ao fim.</p></div></div>
-    <div class="adv"><img src="img/thaynara.jpg" alt="Thaynara Melo"><div><h3>Thaynara Melo</h3><span>OAB/PE 57.762</span><p>Atuação em processos administrativos e judiciais de saúde e benefícios por incapacidade.</p></div></div>
-    <div class="adv"><img src="img/iago.jpg" alt="Iago Andrade"><div><h3>Iago Andrade</h3><span>OAB/PE 59.840</span><p>Atuação previdenciária: BPC, auxílio-acidente, aposentadorias, recursos e ações contra o INSS.</p></div></div>
+<section class="aux" id="auxilio-acidente"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Auxílio-acidente</div><h2>O benefício mais <em>esquecido</em> do INSS.</h2></div>
+    <p class="r">Quem sofreu um acidente, de qualquer tipo, e ficou com alguma limitação permanente pode ter direito a receber do INSS todo mês, mesmo trabalhando. A maioria nem sabe.</p>
   </div>
+  <div class="lista">
+    <div class="item r"><span>01</span><b>Recebe trabalhando</b><p>Não precisa parar. O benefício é pago junto com o salário, todo mês.</p></div>
+    <div class="item r"><span>02</span><b>Até a aposentadoria</b><p>Uma vez concedido, é pago até você se aposentar. Anos de renda a mais.</p></div>
+    <div class="item r"><span>03</span><b>Qualquer acidente</b><p>Não precisa ter sido no trabalho. Moto, queda, acidente em casa ou na rua também contam.</p></div>
+    <div class="item r"><span>04</span><b>Paga o atrasado</b><p>Devido desde o dia em que o auxílio-doença acabou. Pode ser mais de um ano de valores de uma vez.</p></div>
+    <div class="item r"><span>05</span><b>Sem carência</b><p>Não exige tempo mínimo de contribuição. Basta ter qualidade de segurado na data do acidente.</p></div>
+    <div class="item r"><span>06</span><b>Sequela pequena também vale</b><p>Não precisa estar incapacitado. Basta que a limitação exija mais esforço no mesmo trabalho.</p></div>
+  </div>
+  <p style="margin-top:44px" class="r"><a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram. Tive um acidente, fiquei com sequela e quero saber se tenho direito ao auxílio-acidente."><svg><use href="#wa"/></svg>Quero saber se tenho direito</a></p>
 </div></section>
 
-<section class="bg" id="avaliacoes"><div class="wrap">
-  <span class="eyebrow">O que dizem os nossos clientes</span>
-  <h2>Avaliações reais, direto do Google</h2>
-  <div class="filete"></div>
-  <div class="google">
-    <div class="nota">5,0<small>nota média no Google</small></div>
-    <div><span class="estrelas">★★★★★</span><p>A CMA Advocacia é avaliada com nota máxima por dezenas de famílias atendidas em Caruaru e região. As avaliações são públicas e podem ser conferidas na nossa ficha do Google.</p><p style="margin-top:14px"><a class="btn ouro" href="https://www.google.com/maps/search/?api=1&query=CMA+Advocacia+-+Advogados+Caruaru" target="_blank" rel="noopener">Ver avaliações no Google</a></p></div>
+<section class="areas" id="areas"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Áreas de atuação</div><h2>Escolha a sua situação e <em>fale direto</em> com a equipe.</h2></div>
+    <p class="r">Cada linha abre o WhatsApp com a sua dúvida já escrita. É só enviar.</p>
   </div>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o auxílio-acidente."><h3>Auxílio-acidente</h3><p>Sequela de acidente de qualquer tipo, mesmo que você já tenha voltado a trabalhar.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o BPC/LOAS para pessoa com deficiência."><h3>BPC/LOAS deficiência</h3><p>Autismo, síndrome de Down, deficiência física ou intelectual. Um salário mínimo por mês para famílias de baixa renda.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o BPC/LOAS para idoso."><h3>BPC/LOAS idoso</h3><p>A partir de 65 anos, mesmo sem nunca ter contribuído, quando a renda da família é baixa.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre a minha aposentadoria."><h3>Aposentadoria</h3><p>Por idade, tempo de contribuição, regras de transição e planejamento para se aposentar na melhor regra.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram e quero saber sobre o salário-maternidade."><h3>Salário-maternidade</h3><p>Para mães empregadas, desempregadas, MEI, autônomas ou rurais. Também em caso de adoção.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
+  <a class="row wa r" href="#" data-msg="Olá! Vim pelo Instagram. O INSS negou ou cortou meu benefício e quero saber o que fazer."><h3>Benefício negado ou cortado</h3><p>O INSS negou, cessou ou pediu documentos que você não entende? Existem caminhos: recurso, novo pedido ou Justiça.</p><span class="go">Falar agora <svg><use href="#wa"/></svg></span></a>
 </div></section>
 
 <section id="duvidas"><div class="wrap">
-  <span class="eyebrow">Dúvidas frequentes</span>
-  <h2>O que as famílias mais perguntam</h2>
-  <div class="filete"></div>
+  <div class="head">
+    <div class="r"><div class="label">Dúvidas frequentes</div><h2>O que as famílias <em>mais perguntam.</em></h2></div>
+    <p class="r">Se a sua dúvida não estiver aqui, mande no WhatsApp. Respondemos por mensagem ou áudio.</p>
+  </div>
+  <div class="r">
   <details open><summary>Preciso ir ao escritório para começar?</summary><p>Não. O primeiro contato e a análise inicial são feitos pelo WhatsApp. Você só se desloca se preferir ou quando for necessário assinar documentos.</p></details>
-  <details><summary>Já voltei a trabalhar depois do acidente. Ainda tenho direito?</summary><p>Sim, pode ter. O auxílio-acidente existe justamente para quem voltou a trabalhar com alguma limitação permanente. Ele é pago junto com o salário.</p></details>
+  <details><summary>Já voltei a trabalhar depois do acidente. Ainda tenho direito?</summary><p>Pode ter. O auxílio-acidente existe justamente para quem voltou a trabalhar com alguma limitação permanente. Ele é pago junto com o salário.</p></details>
   <details><summary>Nunca contribuí para o INSS. Tenho algum direito?</summary><p>Pode ter. O BPC/LOAS não exige contribuição: depende da deficiência ou da idade (65 anos ou mais) e da renda da família.</p></details>
   <details><summary>O INSS já negou o meu pedido. Acabou?</summary><p>Não necessariamente. Uma negativa pode ser revista por recurso administrativo, por novo pedido com a documentação correta ou por ação na Justiça.</p></details>
-  <details><summary>Quanto tempo demora?</summary><p>Depende do benefício e do caminho. Pedidos administrativos bem instruídos costumam sair em poucos meses. Processos judiciais levam mais tempo, e você recebe os valores atrasados ao final.</p></details>
+  <details><summary>Quanto tempo demora?</summary><p>Depende do benefício e do caminho. Pedidos administrativos bem instruídos costumam sair em poucos meses. Processos judiciais levam mais tempo, e os valores atrasados são pagos ao final.</p></details>
   <details><summary>Como funcionam os honorários?</summary><p>Explicamos tudo na conversa inicial, de forma transparente e por escrito, antes de qualquer contratação. Nada é cobrado sem o seu conhecimento.</p></details>
-  <div class="centro"><a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram e tenho uma dúvida sobre o meu caso no INSS."><svg><use href="#wa"/></svg>Tirar minha dúvida no WhatsApp</a></div>
+  </div>
 </div></section>
 
 <section class="agenda" id="agendamento"><div class="wrap">
-  <span class="eyebrow">Agendamento</span>
-  <h2>Agende um atendimento com a equipe</h2>
-  <p>Mande uma mensagem e escolha o melhor horário para conversar, por WhatsApp ou no escritório em Caruaru. Entender os seus direitos não custa nada, e pode mudar a rotina da sua família.</p>
-  <a class="btn wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de agendar um atendimento com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg>Agendar atendimento pelo WhatsApp</a>
-  <div class="info"><span>Segunda a sexta, das 9h às 18h</span><span>Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</span></div>
+  <div class="label r" style="color:var(--gold2)">Agendamento</div>
+  <h2 class="r">Agende um atendimento <em>com a equipe.</em></h2>
+  <p class="r">Mande uma mensagem e escolha o melhor horário para conversar, pelo WhatsApp ou no escritório em Caruaru. Entender os seus direitos não custa nada.</p>
+  <a class="btn wa r" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de agendar um atendimento com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg>Agendar pelo WhatsApp</a>
+  <div class="meta r">
+    <div><b>Horário</b>Segunda a sexta, 9h às 18h</div>
+    <div><b>Endereço</b>Travessa São José, nº 20<br>Maurício de Nassau, Caruaru-PE</div>
+    <div><b>Instagram</b><a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener" style="color:#fff">@cmaadvocaciabr</a></div>
+  </div>
 </div></section>
 
 <footer><div class="wrap">
   <img src="img/logo.png" alt="CMA Advocacia">
-  <div>Campos, Melo e Andrade Advocacia · Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</div>
-  <div>escritoriocmaadvocacia@gmail.com · <a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener">@cmaadvocaciabr</a></div>
-  <div>Paula Campos OAB/PE 64.446 · Thaynara Melo OAB/PE 57.762 · Iago Andrade OAB/PE 59.840</div>
-  <p class="aviso">Conteúdo de caráter informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Os casos da seção "Histórias que passaram por aqui" são reais, divulgados com autorização dos clientes e identificados apenas pelo primeiro nome; os valores citados constam de documentos oficiais do processo. A seção "Situações" traz exemplos ilustrativos, não casos específicos do escritório. Cada caso é analisado individualmente e o resultado depende das circunstâncias e da decisão dos órgãos competentes. Não há garantia de resultado.</p>
+  <div>
+    <div>Campos, Melo e Andrade Advocacia · Paula Campos OAB/PE 64.446 · Thaynara Melo OAB/PE 57.762 · Iago Andrade OAB/PE 59.840</div>
+    <div>escritoriocmaadvocacia@gmail.com · Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</div>
+    <p class="aviso">Conteúdo de caráter informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Os exemplos reais são casos atendidos pelo escritório, identificados apenas pela inicial, com valores conforme documentos oficiais dos processos. Cada caso é analisado individualmente e o resultado depende das circunstâncias e da decisão dos órgãos competentes. Não há garantia de resultado.</p>
+  </div>
 </div></footer>
 
 <a class="flutua wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia." aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg></a>
@@ -278,6 +299,8 @@ footer a{color:var(--graf)}
     a.href="https://wa.me/"+NUM+"?text="+encodeURIComponent(a.getAttribute("data-msg"));
     a.target="_blank"; a.rel="noopener";
   });
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll(".r:not(.in)").forEach(function(el,i){el.style.transitionDelay=(i%3)*90+"ms";io.observe(el);});
 })();
 </script>
 </body>
