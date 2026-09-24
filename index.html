@@ -120,6 +120,14 @@ section{padding:128px 0}
 .gbox blockquote{font-family:"Playfair Display",serif;font-size:clamp(1.5rem,2.6vw,2.1rem);font-style:italic;font-weight:300;line-height:1.3;margin:18px 0 26px;color:#f3eee4}
 .gbox p{color:#c9c2b6;font-size:.98rem;max-width:46ch}
 .btn.claro{background:#fff;color:var(--ink);box-shadow:none}
+.depos{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.depo{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.depo .stars{font-size:1rem;letter-spacing:3px}
+.depo p{color:#e9e3d8;font-size:.98rem;line-height:1.7;flex:1;font-weight:300}
+.depo b{display:block;color:#fff;font-weight:700;font-size:.92rem}
+.depo small{color:#a9a39a;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+.depo.grande{grid-column:span 2}
+@media(max-width:900px){.depos{grid-template-columns:1fr}.depo.grande{grid-column:auto}}
 /* resultados */
 .res{background:var(--paper)}
 .numeros{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
@@ -252,7 +260,17 @@ footer a{color:var(--graf)}
   </div>
   <div class="gbox">
     <div class="r"><div class="nota">5,0<small>Nota média no Google</small></div></div>
-    <div class="r"><div class="stars">★★★★★</div><blockquote>Dezenas de famílias de Caruaru e região avaliaram o atendimento da CMA com a nota máxima.</blockquote><p>Cada avaliação é de um cliente real, publicada por ele mesmo na ficha do Google do escritório.</p><p style="margin-top:22px"><a class="btn claro" href="https://www.google.com/maps/search/?api=1&query=CMA+Advocacia+-+Advogados+Caruaru" target="_blank" rel="noopener">Ver as avaliações no Google</a></p></div>
+    <div class="r"><div class="stars">★★★★★</div><blockquote>Dezenas de famílias avaliaram o atendimento da CMA com a nota máxima.</blockquote><p>Cada avaliação abaixo é de um cliente real, publicada por ele mesmo na ficha do Google do escritório.</p><p style="margin-top:22px"><a class="btn claro" href="https://www.google.com/maps/search/?api=1&query=CMA+Advocacia+-+Advogados+Caruaru" target="_blank" rel="noopener">Ver as avaliações no Google</a></p></div>
+  </div>
+
+  <div class="depos">
+    <div class="depo grande r"><span class="stars">★★★★★</span><p>"Estou muitíssimo satisfeita com o atendimento da Dra. Paula Campos e sua equipe composta por Thaynara Melo e Iago Andrade. Desde o primeiro contato, demonstrou grande competência técnica e profissional. A comunicação sempre constante e com transparência, o que me deixou muito mais segura durante o decorrer do processo. Graças à sua proatividade e dedicação, estou alcançando um bom resultado muito positivo. Sou grata a sua competência, que Deus continue abençoando a todos!"</p><div><b>Veronica Maria</b><small>Avaliação no Google</small></div></div>
+    <div class="depo r"><span class="stars">★★★★★</span><p>"Muita competência, trabalho sério, eu recomendo. Inclusive vou indicar um amigo pra ser representado pelo CMA Advocacia."</p><div><b>Cristiano Marques dos Santos</b><small>Avaliação no Google</small></div></div>
+    <div class="depo r"><span class="stars">★★★★★</span><p>"Tratado muito bem, ótimos profissionais, nota 10. Sabem tratar um cliente bem. Meus parabéns a todos."</p><div><b>Daniel Cruz</b><small>Avaliação no Google</small></div></div>
+    <div class="depo grande r"><span class="stars">★★★★★</span><p>"Uma equipe que tem bastante seriedade, respeito e compromisso com o cliente, tem o cuidado de orientar o cliente e de deixar ciente sobre todos os trâmites do processo. Além de ter uma competência jurídica inquestionável, uma postura ética e profissional. Possuem também uma linguagem de fácil entendimento até mesmo para aqueles que não possuem conhecimento no âmbito jurídico. São acessíveis e disponíveis ao cliente, o que traz uma relação de confiança."</p><div><b>Julyana Silva</b><small>Avaliação no Google</small></div></div>
+  </div>
+  <div class="depos" style="margin-top:24px;grid-template-columns:1fr">
+    <div class="depo r"><span class="stars">★★★★★</span><p>"A minha experiência com o CMA Advocacia foi muito boa. A equipe é muito responsável, tirando nossas dúvidas. Só tenho o que agradecer pela ajuda na minha causa! Super indico a CMA Advocacia."</p><div><b>Magaly Magda</b><small>Avaliação no Google</small></div></div>
   </div>
 </div></section>
 
