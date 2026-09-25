@@ -166,6 +166,14 @@ section{padding:72px 0}
 .oficial .contato b{color:var(--gold)}
 .oficial .contato a,.oficial .contato span{color:var(--ink)}
 .oficial .contato small{color:var(--graf)}
+.lista-contatos{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.lc{background:#fff;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;font-size:.98rem}
+.lc>span:first-child{color:var(--graf)}
+.lc a{color:var(--ink);text-decoration:none;font-weight:700;white-space:nowrap}
+.lc a:hover{color:var(--gold)}
+.lc .end{text-align:right;font-size:.9rem;color:var(--ink)}
+.golpe-lead{color:var(--graf);margin-bottom:16px;line-height:1.65}
+@media(max-width:900px){.lista-contatos{grid-template-columns:1fr}.lc{flex-direction:column;align-items:flex-start;gap:4px}.lc .end{text-align:left}}
 .golpe{margin-top:28px;border:1.5px solid var(--gold);border-radius:6px;padding:28px 32px;background:#fff}
 .golpe-t{font-size:1rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px}
 .golpe-t::before{content:"!";display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#fff;align-items:center;justify-content:center;font-size:.95rem}
@@ -384,21 +392,27 @@ footer a{color:var(--graf)}
 <section class="oficial" id="contatos"><div class="wrap">
   <div class="head">
     <div class="r"><div class="label">Contatos oficiais</div><h2>Fale só pelos <em>nossos canais.</em></h2></div>
-    <p class="r">Estes são os únicos contatos da CMA Advocacia. Qualquer mensagem, ligação ou cobrança vinda de outro número ou e-mail não é do escritório.</p>
+    <p class="r">Estes são os únicos contatos da CMA Advocacia. Qualquer outro número, e-mail ou perfil que fale em nosso nome <strong>não é nosso</strong>.</p>
   </div>
-  <div class="contatos r">
-    <div class="contato"><b>WhatsApp oficial</b><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia.">(81) 99316-9796</a><small>Único número de atendimento</small></div>
-    <div class="contato"><b>E-mail</b><a href="mailto:escritoriocmaadvocacia@gmail.com">escritoriocmaadvocacia@gmail.com</a></div>
-    <div class="contato"><b>Instagram</b><a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener">@cmaadvocaciabr</a><small>Perfil verificado pelo nome exato</small></div>
-    <div class="contato"><b>Endereços</b><span>Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</span><small>Recife: presencial a combinar</small></div>
+  <div class="lista-contatos r">
+    <div class="lc"><span>Dra. Paula Campos</span><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a Dra. Paula Campos.">(81) 99418-4015</a></div>
+    <div class="lc"><span>Dr. Iago Andrade</span><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com o Dr. Iago Andrade.">(81) 99358-1711</a></div>
+    <div class="lc"><span>Dra. Thaynara Melo</span><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a Dra. Thaynara Melo.">(81) 99655-7812</a></div>
+    <div class="lc"><span>Setor Comercial</span><span class="dois"><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia.">(81) 99316-9796</a> · <a href="https://wa.me/5547991240128" target="_blank" rel="noopener">(47) 99124-0128</a></span></div>
+    <div class="lc"><span>Setor Jurídico</span><a href="https://wa.me/5581989970780" target="_blank" rel="noopener">(81) 98997-0780</a></div>
+    <div class="lc"><span>Jurídico Saúde</span><a href="https://wa.me/5581992387035" target="_blank" rel="noopener">(81) 99238-7035</a></div>
+    <div class="lc"><span>E-mail</span><a href="mailto:escritoriocmaadvocacia@gmail.com">escritoriocmaadvocacia@gmail.com</a></div>
+    <div class="lc"><span>Instagram</span><a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener">@cmaadvocaciabr</a></div>
+    <div class="lc"><span>Endereço</span><span class="end">Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE · Recife: presencial a combinar</span></div>
   </div>
   <div class="golpe r">
-    <div class="golpe-t">Alerta de golpes</div>
+    <div class="golpe-t">Alerta de golpe</div>
+    <p class="golpe-lead">Golpistas usam o nome e a foto da nossa equipe. Por regra da Justiça, algumas informações dos processos são públicas, e é assim que eles acessam dados da sua causa. <strong>Mesmo que digam seu nome completo e outras informações pessoais, é golpe.</strong></p>
     <ul>
-      <li>A CMA <strong>nunca pede pagamento de taxa, PIX ou depósito</strong> para "liberar" benefício, alvará ou valores atrasados.</li>
-      <li>A CMA <strong>nunca pede sua senha do gov.br ou do Meu INSS por link</strong>. Se isso acontecer, é golpe.</li>
-      <li>Nenhum advogado do escritório entra em contato por número que não seja o WhatsApp oficial acima.</li>
-      <li>Recebeu algo estranho em nosso nome? <strong>Não responda e nos avise pelo WhatsApp oficial.</strong></li>
+      <li>A CMA <strong>nunca pede PIX, pagamento ou depósito</strong> para liberar benefício, alvará ou valores atrasados.</li>
+      <li>A CMA <strong>nunca pede sua senha do gov.br ou do Meu INSS por link</strong>.</li>
+      <li>Qualquer número que não esteja na lista acima <strong>não é nosso</strong>.</li>
+      <li>Recebeu algo estranho em nosso nome? <strong>Não responda, bloqueie e nos avise</strong> por um dos contatos oficiais.</li>
     </ul>
   </div>
 </div></section>
