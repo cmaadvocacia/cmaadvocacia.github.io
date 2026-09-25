@@ -160,6 +160,20 @@ section{padding:72px 0}
 .areas .row .go{display:inline-flex;align-items:center;gap:10px;font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--wa);white-space:nowrap}
 .areas .row .go svg{width:20px;height:20px;fill:var(--wa)}
 .bg-outras{background:var(--cream)}
+.oficial{background:var(--cream)}
+.oficial .contatos{background:var(--line);border-color:var(--line);margin-top:0}
+.oficial .contato{background:#fff}
+.oficial .contato b{color:var(--gold)}
+.oficial .contato a,.oficial .contato span{color:var(--ink)}
+.oficial .contato small{color:var(--graf)}
+.golpe{margin-top:28px;border:1.5px solid var(--gold);border-radius:6px;padding:28px 32px;background:#fff}
+.golpe-t{font-size:1rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.golpe-t::before{content:"!";display:inline-flex;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#fff;align-items:center;justify-content:center;font-size:.95rem}
+.golpe ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}
+.golpe li{color:var(--graf);font-size:.97rem;padding-left:18px;position:relative;line-height:1.6}
+.golpe li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.golpe strong{color:var(--ink)}
+@media(max-width:900px){.golpe ul{grid-template-columns:1fr}}
 /* dúvidas */
 details{border-top:1px solid var(--line);padding:16px 0}
 details:last-of-type{border-bottom:1px solid var(--line)}
@@ -208,7 +222,7 @@ footer a{color:var(--graf)}
 
 <header><div class="wrap">
   <img src="img/logo.png" alt="CMA Advocacia">
-  <nav><a href="#quem-somos">Quem somos</a><a href="#avaliacoes">Avaliações</a><a href="#resultados">Casos</a><a href="#areas">Áreas</a><a href="#duvidas">Dúvidas</a></nav>
+  <nav><a href="#quem-somos">Quem somos</a><a href="#avaliacoes">Avaliações</a><a href="#resultados">Casos</a><a href="#areas">Áreas</a><a href="#duvidas">Dúvidas</a><a href="#contatos">Contatos</a></nav>
   <a class="top wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia."><svg><use href="#wa"/></svg><span>WhatsApp</span></a>
 </div></header>
 
@@ -367,6 +381,28 @@ footer a{color:var(--graf)}
   </div>
 </div></section>
 
+<section class="oficial" id="contatos"><div class="wrap">
+  <div class="head">
+    <div class="r"><div class="label">Contatos oficiais</div><h2>Fale só pelos <em>nossos canais.</em></h2></div>
+    <p class="r">Estes são os únicos contatos da CMA Advocacia. Qualquer mensagem, ligação ou cobrança vinda de outro número ou e-mail não é do escritório.</p>
+  </div>
+  <div class="contatos r">
+    <div class="contato"><b>WhatsApp oficial</b><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia.">(81) 99316-9796</a><small>Único número de atendimento</small></div>
+    <div class="contato"><b>E-mail</b><a href="mailto:escritoriocmaadvocacia@gmail.com">escritoriocmaadvocacia@gmail.com</a></div>
+    <div class="contato"><b>Instagram</b><a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener">@cmaadvocaciabr</a><small>Perfil verificado pelo nome exato</small></div>
+    <div class="contato"><b>Endereços</b><span>Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</span><small>Recife: presencial a combinar</small></div>
+  </div>
+  <div class="golpe r">
+    <div class="golpe-t">Alerta de golpes</div>
+    <ul>
+      <li>A CMA <strong>nunca pede pagamento de taxa, PIX ou depósito</strong> para "liberar" benefício, alvará ou valores atrasados.</li>
+      <li>A CMA <strong>nunca pede sua senha do gov.br ou do Meu INSS por link</strong>. Se isso acontecer, é golpe.</li>
+      <li>Nenhum advogado do escritório entra em contato por número que não seja o WhatsApp oficial acima.</li>
+      <li>Recebeu algo estranho em nosso nome? <strong>Não responda e nos avise pelo WhatsApp oficial.</strong></li>
+    </ul>
+  </div>
+</div></section>
+
 <section class="agenda" id="agendamento"><div class="wrap">
   <div class="label r" style="color:var(--gold2)">Agendamento</div>
   <h2 class="r">Agende uma primeira conversa, <em>sem compromisso.</em></h2>
@@ -377,12 +413,6 @@ footer a{color:var(--graf)}
     <div><b>Presencial</b>Caruaru: segunda a sexta, 9h às 18h<br>Recife: a combinar</div>
   </div>
 
-  <div class="contatos r">
-    <div class="contato"><b>WhatsApp oficial</b><a class="wa" href="#" data-msg="Olá! Vim pelo Instagram e gostaria de falar com a equipe da CMA Advocacia.">(81) 99316-9796</a><small>Único número de atendimento do escritório</small></div>
-    <div class="contato"><b>E-mail</b><a href="mailto:escritoriocmaadvocacia@gmail.com">escritoriocmaadvocacia@gmail.com</a></div>
-    <div class="contato"><b>Instagram</b><a href="https://instagram.com/cmaadvocaciabr" target="_blank" rel="noopener">@cmaadvocaciabr</a></div>
-    <div class="contato"><b>Endereços</b><span>Travessa São José, nº 20, Maurício de Nassau, Caruaru-PE</span><small>Recife: atendimento presencial a combinar</small></div>
-  </div>
 </div></section>
 
 <footer><div class="wrap">
