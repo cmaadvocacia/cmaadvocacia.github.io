@@ -443,8 +443,13 @@ footer a{color:var(--graf)}
 <script>
 (function(){
   var NUM="558193169796";
+  // ?canal=google|facebook|status troca o "Vim pelo Instagram" (12/11/2026): a Maya lê a frase e grava o canal no CRM
+  var CANAIS={google:"Google",facebook:"Facebook",status:"status do WhatsApp",tiktok:"TikTok",kwai:"Kwai",youtube:"YouTube"};
+  var canal=CANAIS[(new URLSearchParams(location.search).get("canal")||"").toLowerCase()];
   document.querySelectorAll("a.wa").forEach(function(a){
-    a.href="https://wa.me/"+NUM+"?text="+encodeURIComponent(a.getAttribute("data-msg"));
+    var msg=a.getAttribute("data-msg");
+    if(canal){msg=msg.replace("Vim pelo Instagram","Vim pelo "+canal);}
+    a.href="https://wa.me/"+NUM+"?text="+encodeURIComponent(msg);
     a.target="_blank"; a.rel="noopener";
   });
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12});
